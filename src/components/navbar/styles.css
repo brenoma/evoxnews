@@ -1,0 +1,17 @@
+.navbar {
+    background-color: #614EA6;
+    height: 90px;
+}
+
+.nav-link {
+    font-family: 'Poppins';
+}
+
+.nav-item a{
+    color: #FFF;
+    transition: .3s ease-in;
+}
+
+.nav-item a:hover{
+    color: #F21667;
+}

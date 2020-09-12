@@ -1,0 +1,41 @@
+.card {
+    width: 40%;
+    border-radius: 6px;
+    transition: 0.2s ease-in;
+}
+
+.card:hover {
+    border-color: #614EA6;
+}
+
+.card-title {
+    overflow: hidden;
+    font-family: 'Poppins';
+    /* font-weight: 700; */
+    color: #614EA6;
+}
+
+.footer-card {
+    color: #614EA6;
+    height: 35px;   
+}
+
+.btn-details {
+    background-color: #614EA6;
+    color: #FFF;
+}
+
+.btn-details:hover {
+    background-color: #F21667;
+    color: #FFF;
+}
+
+.card-text {
+    max-height: 100px;
+    overflow: hidden;
+}
+
+.img-card {
+    height: 350px;
+    min-width: 100%;
+}

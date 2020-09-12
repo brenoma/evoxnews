@@ -1,0 +1,16 @@
+.input-area {
+    display: grid;
+    position: absolute;
+    top: 4.4rem;
+    width: 100vw;
+    justify-content: center;
+}
+
+.input-text {
+    border-radius: 6px;
+    width: 60vw;
+}
+
+.input-text input {
+    justify-content: center;
+}
