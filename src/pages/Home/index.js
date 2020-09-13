@@ -30,8 +30,8 @@ export default function Home() {
             <div className="row">
                 {news.map(news => (
                     <div className="col-md-12">
-                        <Card img={news.urlToImage} title={news.title} description={news.description} author={news.author} url={news.url} />
-                    </div>
+                        <Card img={news.urlToImage} title={news.title} description={news.description} author={news.author} url={news.url} key={news.source.id} />
+                    </div> //
                 ))}
             </div>
         </>
