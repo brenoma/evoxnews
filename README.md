@@ -31,15 +31,15 @@ Probably i'll use [Heroku](https://www.heroku.com/) to deploy the application.
 
 ### <div id="steps" /> Steps
 
-[X] - Connection with API
-[] - Pagination
-[] - Search Bar
-[] - Filter Search
+[x] - Connection with API
+[ ] - Pagination
+[ ] - Search Bar
+[ ] - Filter Search
 
 **Bônus:**
-[] - UI/UX Good Design
-[] - Good performance
-[] - Unitary Tests
+[ ] - UI/UX Good Design
+[ ] - Good performance
+[ ] - Unitary Tests
 
 ### <div id="contribuing" /> Contribuing
 
