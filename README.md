@@ -24,7 +24,6 @@ For this project i will use `React` as a base framework.
 * [Axios](https://github.com/axios/axios) - HTTP client to consume the API.
 * [Bootstrap](https://getbootstrap.com/docs/4.5/getting-started/introduction/) - Librarie used for part of the page design.
 * [React Router](https://reactrouter.com/web/guides/quick-start) - The tool used to create the SPA routes.
-* [CORS]() - Tool used to 
 
 ### <divd id="deploy" /> Deploy
 
@@ -34,8 +33,9 @@ Probably i'll use [Heroku](https://www.heroku.com/) to deploy the application.
 
 [x] - Connection with API
 [ ] - Pagination
-[ ] - Search Bar
-[ ] - Filter Search
+[x] - Search Bar
+[x] - Filter Search
+[ ] - Deploy
 
 **Bônus:**
 [ ] - UI/UX Good Design
@@ -49,3 +49,7 @@ Probably i'll use [Heroku](https://www.heroku.com/) to deploy the application.
 3. Commit your changes.
 4. Push to the branch.
 5. Create a new Pull Request.
+
+### <div id="unitary-tests" /> Unitary Tests
+
+First i'm going to implement the tests to always go wrong. 
