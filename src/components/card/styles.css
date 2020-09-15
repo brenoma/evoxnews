@@ -1,13 +1,14 @@
 .card {
-    width: 60%;
-    border-radius: 6px;
+    width: 90%;
+    height: 90%;
+    border-radius: 1.5rem;
     transition: 0.2s ease-in;
-    padding-bottom: 10px;
+    padding-bottom: 0.8rem;
 }
 
 .card:hover {
-    border-color: #614EA6;
-    border-width: 4px;
+    border-color: gray;
+    border-width: 2px;
 }
 
 .card-title {
@@ -15,27 +16,34 @@
     outline-offset: -100px;
     max-height: 150px;
     font-family: 'Poppins';
+    font-size: 20px;
     font-weight: 600;
     color: #614EA6;
 }
 
 .footer-card {
     color: #614EA6;
-    height: 35px;   
+    height: 35px;
+    padding-bottom: 1rem;
 }
 
 .btn-details {
+    height: 2rem;
+    width: 5.5rem;
     background-color: #614EA6;
     color: #FFF;
+    border-radius: 10px;
+    transition: 0.2s ease-in;
 }
 
 .btn-details:hover {
     background-color: #F21667;
+    border-radius: 20px;
     color: #FFF;
 }
 
 .card-text {
-    max-height: 100px;
+    max-height: 10rem;
     overflow: hidden;
 }
 
@@ -53,5 +61,6 @@
     }
     .card {
         width: 80%;
+        height: 100%;
     }
 }

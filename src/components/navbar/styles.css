@@ -1,17 +1,27 @@
 .navbar {
     background-color: #614EA6;
-    height: 90px;
+    height: 5.5rem;
 }
 
-.nav-link {
-    font-family: 'Poppins';
-}
-
-.nav-item a{
+.nav-item a {
     color: #FFF;
     transition: .3s ease-in;
 }
 
-.nav-item a:hover{
+.nav-item a:hover {
     color: #F21667;
+}
+
+.navbar-nav {
+    width: 100%;
+    justify-content: space-between;
+}
+
+@media screen and (max-height: 768px) {
+    .nav-item a{
+        width: 100%;
+    }
+    .navbar-nar {
+
+    }
 }
