@@ -1,0 +1,5 @@
+# Regras de negócio para os cards
+
+Regras: (1)
+    [] A propriedade img deve ser válida.
+    [] Não pode ter valor null na prop key.

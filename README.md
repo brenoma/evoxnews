@@ -32,7 +32,7 @@ Probably i'll use [Heroku](https://www.heroku.com/) to deploy the application.
 ### <div id="steps" /> Steps
 
 [x] - Connection with API
-[ ] - Pagination
+[x] - Pagination
 [x] - Search Bar
 [x] - Filter Search
 [ ] - Deploy
