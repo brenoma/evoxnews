@@ -1,12 +1,14 @@
 # Evox Group Challenge
 
+https://img.shields.io/github/issues/brenoma/evoxnews?style=plastic
+
 ### Content Table
 
 - [**Challenge**](#challenge)
 - [**Framework**](#framework)
 - [**Packages and Libraries**](#packsandlibs)
 - [**Deploy**](#deploy)
-- [**Steps**](#steps)
+- [**TODO**](#todo)
 - [**Problems**](#problems)
 - [**Contribuing**](#contribuing)
 
@@ -29,18 +31,18 @@ For this project i will use `React` as a base framework.
 
 Probably i'll use [Heroku](https://www.heroku.com/) to deploy the application.
 
-### <div id="steps" /> Steps
+### <div id="todo" /> TODO
 
-[x] - Connection with API
-[x] - Pagination
-[x] - Search Bar
-[x] - Filter Search
-[ ] - Deploy
+- [X] Connection with API
+- [X] - Pagination
+- [X] - Search Bar
+- [X] - Filter Search
+- [ ] - Deploy
 
 **Bônus:**
-[ ] - UI/UX Good Design
-[ ] - Good performance
-[ ] - Unitary Tests
+- [ ] - UI/UX Good Design
+- [ ] - Good performance
+- [ ] - Unitary Tests
 
 ### <div id="contribuing" /> Contribuing
 
