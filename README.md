@@ -2,7 +2,7 @@
 
 <div id="badges">
     <img alt="Github issues" src="https://img.shields.io/github/issues/brenoma/evoxnews?style=plastic" />
-    <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/brenoma/evoxnews" />
+    <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/brenoma/evoxnews?style=plastic" />
 </div>
 
 ### Content Table

@@ -13,7 +13,7 @@ export default function Home(match) {
     function handleSearch(e) {
         console.log(e.target.value)
         try {
-            api.get(`/everything?q=${e.target.value}&apiKey=85444b264aa246f28c5f41494efd6e03`).then(response => {
+            api.get(`http://newsapi.org/v2/everything?q=${e.target.value}&apiKey=85444b264aa246f28c5f41494efd6e03`).then(response => {
                 setNews(response.data.articles)
 
             })
@@ -25,7 +25,7 @@ export default function Home(match) {
 
     useEffect(() => {
         try {
-            api.get('/top-headlines?country=br&apiKey=85444b264aa246f28c5f41494efd6e03').then(response => {
+            api.get('http://newsapi.org/v2/top-headlines?country=br&apiKey=85444b264aa246f28c5f41494efd6e03').then(response => {
                 setNews(response.data.articles)
                 console.log(response.data)
             })
