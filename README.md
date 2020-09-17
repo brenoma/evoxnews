@@ -1,6 +1,9 @@
 # Evox Group Challenge
 
-https://img.shields.io/github/issues/brenoma/evoxnews?style=plastic
+<div id="badges">
+    <img alt="Github issues" src="https://img.shields.io/github/issues/brenoma/evoxnews?style=plastic" />
+    <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/brenoma/evoxnews" />
+</div>
 
 ### Content Table
 
@@ -34,15 +37,15 @@ Probably i'll use [Heroku](https://www.heroku.com/) to deploy the application.
 ### <div id="todo" /> TODO
 
 - [X] Connection with API
-- [X] - Pagination
-- [X] - Search Bar
-- [X] - Filter Search
-- [ ] - Deploy
+- [X] Pagination
+- [X] Search Bar
+- [X] Filter Search
+- [ ] Deploy
 
 **Bônus:**
-- [ ] - UI/UX Good Design
-- [ ] - Good performance
-- [ ] - Unitary Tests
+- [ ] UI/UX Good Design
+- [ ] Good performance
+- [ ] Unitary Tests
 
 ### <div id="contribuing" /> Contribuing
 
