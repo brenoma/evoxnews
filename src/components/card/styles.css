@@ -1,66 +1,99 @@
-.card {
-    width: 90%;
-    height: 90%;
-    border-radius: 1.5rem;
-    transition: 0.2s ease-in;
-    padding-bottom: 0.8rem;
-}
-
-.card:hover {
-    border-color: gray;
-    border-width: 2px;
-}
-
-.card-title {
+.body {
+    width: 100vw;
+    height: 65vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     overflow: hidden;
-    outline-offset: -100px;
-    max-height: 150px;
-    font-family: 'Poppins';
-    font-size: 20px;
-    font-weight: 600;
-    color: #614EA6;
 }
 
-.footer-card {
-    color: #614EA6;
-    height: 35px;
-    padding-bottom: 1rem;
+.card {
+    display: grid;
+    grid-template-columns: 320px;
+    grid-template-rows: 210px 210px 80px;
+    grid-template-areas: "image" "text" "stats";
+
+    font-family: roboto;
+    border-radius: 15px;
+    background: #fff;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    text-align: center;
+
+    transition: 0.5s ease;
+    cursor: pointer;
+    opacity: 0.8;
 }
 
-.btn-details {
-    height: 2rem;
-    width: 5.5rem;
-    background-color: #614EA6;
-    color: #FFF;
-    border-radius: 10px;
-    transition: 0.2s ease-in;
-}
-
-.btn-details:hover {
-    background-color: #F21667;
-    border-radius: 20px;
-    color: #FFF;
+.card-image {
+    grid-area: image;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 100%;
+    height: 100%;
 }
 
 .card-text {
-    max-height: 10rem;
+    grid-area: text;
+    margin: 10px;
+}
+
+.card-text .date {
+    color: slateblue;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.card-text p {
+    color: grey;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.card-text h2 {
     overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 16px;
+    font-weight: bold;
 }
 
-.img-card {
-    /* height: 350px; */
-    /* min-width: 100%; */
-    width: 100%;
+.card-stats {
+    grid-area: stats;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: slateblue;
 }
 
-@media only screen and (max-width: 700px){
-    .card-title{
-        font-weight: 600;
-        font-size: medium;
-        height: 25%;
-    }
-    .card {
-        width: 80%;
-        height: 100%;
-    }
+.card-stats .stat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    color: #fff;
+}
+
+.card-stats .type {
+    font-size: 11px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.card-stats .value {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.card-stats .borders {
+    /* border-left: 1px solid #6a5acd; */
+    border-right: 1px solid grey;
+}
+
+.card:hover {
+    transform: scale(1.12);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+    opacity: 1;
 }
