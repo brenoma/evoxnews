@@ -4,25 +4,29 @@ import api from '../../services/api';
 import Navbar from '../../components/navbar';
 import Card from '../../components/card';
 
+import Fade from '@material-ui/core/Fade';
+
 import './styles.css';
 
 export default function Home(match) {
+
     require('dotenv').config()
 
     const [news, setNews] = useState([]);
     const [loading, setLoading] = useState(1);
+    const [page, setPage] = useState(1);
     let btn = document.getElementById('btn-top');
 
-    async function handleSearch(e) {
+    function handleSearch(e) {
         setLoading(1);
         if (e.target.value === '') {
-            await api.get(`http://newsapi.org/v2/top-headlines?country=br&pageSize=100&apiKey=${process.env.REACT_APP_API_KEY}`).then(response => {
+            api.get(`http://newsapi.org/v2/top-headlines?country=br&pageSize=100&apiKey=${process.env.REACT_APP_API_KEY}`).then(response => {
                 setNews(response.data.articles)
                 setLoading(0);
             })
         }
         try {
-            await api.get(`http://newsapi.org/v2/everything?q=${e.target.value}&sortBy=relevancy&apiKey=${process.env.REACT_APP_API_KEY}`).then(response => {
+            api.get(`http://newsapi.org/v2/everything?q=${e.target.value}&sortBy=relevancy&apiKey=${process.env.REACT_APP_API_KEY}`).then(response => {
                 setNews(response.data.articles)
                 setLoading(0);
             })
@@ -31,19 +35,28 @@ export default function Home(match) {
         }
     }
 
-    useEffect(() => {
-        const fetchData = async () => {
-            try {
-                await api.get(`http://newsapi.org/v2/top-headlines?country=br&pageSize=100&apiKey=${process.env.REACT_APP_API_KEY}`).then(response => {
-                    setNews(response.data.articles)
-                    setLoading(0);
-                })
-            } catch {
-                console.log("Erro");
-            }
+    function fetchNews() {
+        setPage(page + 1)
+        try {
+            api.get(`http://newsapi.org/v2/top-headlines?country=br&pageSize=20&page=${page}&apiKey=${process.env.REACT_APP_API_KEY}`).then(response => {
+                setNews(response.data.articles).concat(news)
+                setLoading(0);
+            })
+        } catch {
+            console.log("Erro");
         }
-        fetchData();
-    });
+    }
+
+    useEffect(() => {
+        try {
+            api.get(`http://newsapi.org/v2/top-headlines?country=br&pageSize=20&page=${page}&apiKey=${process.env.REACT_APP_API_KEY}`).then(response => {
+                setNews(response.data.articles)
+                setLoading(0);
+            })
+        } catch {
+            console.log("Erro");
+        }
+    }, []);
 
     /*
         Scroll Handle Functions
@@ -68,18 +81,14 @@ export default function Home(match) {
     return (
         <>
             <Navbar />
-
             <div className="row mx-auto input-area">
                 <input onChange={handleSearch} type="text" className="form-control text-center input-text" placeholder="Search News" />
             </div>
-
             <br /><br />
-
             {
-
                 loading ? <div className="row load-container"><div className="spinner-grow text-danger mx-auto" role="status"><span className="sr-only"></span></div></div>
                     :
-                    <div>
+                    <Fade in={!loading}>
                         <div className="row">
                             {news.map((news, index) => (
                                 <Card
@@ -94,11 +103,10 @@ export default function Home(match) {
                                 />
                             ))}
                         </div>
-                    </div>
+                    </Fade>
             }
-
             <a href="#top" onClick={scrolltoTop} id="btn-top" className="btn-top text-white">
-                <i class="fas fa-arrow-up p-3"></i>
+                <i className="fas fa-arrow-up p-3"></i>
             </a>
         </>
     )

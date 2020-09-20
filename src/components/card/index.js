@@ -2,10 +2,6 @@ import React from 'react';
 
 import './styles.css';
 
-// function handleClick(props) {
-//     window.open(props);
-// }
-
 function handleTime(props) {
     return (props.slice(11, 13) + ':' + props.slice(14, 16))
 }
@@ -15,9 +11,10 @@ function handleDate(props) {
 }
 
 function card({ img, title, description, author, name, url, date, key }) {
+
     return (
-        <div className="col-md-4 col-sm-12 mx-auto body">
-            <div className="card">
+        <div className="col-lg-3 col-md-6 col-sm-12 mb-5 body">
+            <a href={url} rel='noopener noreferrer' target="_blank" className="p-1 card">
                 <img
                     src={img}
                     alt="Imagem"
@@ -40,7 +37,7 @@ function card({ img, title, description, author, name, url, date, key }) {
                         <div className="value">{name}</div>
                     </div>
                 </div>
-            </div>
+            </a>
         </div>
     )
 }

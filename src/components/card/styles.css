@@ -1,10 +1,9 @@
 .body {
     width: 100vw;
-    height: 65vh;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
 }
 
 .card {
@@ -14,6 +13,7 @@
     grid-template-areas: "image" "text" "stats";
 
     font-family: roboto;
+    text-decoration: none;
     border-radius: 15px;
     background: #fff;
     box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
@@ -22,6 +22,10 @@
     transition: 0.5s ease;
     cursor: pointer;
     opacity: 0.8;
+}
+
+.card:hover {
+    text-decoration: none;
 }
 
 .card-image {
@@ -34,7 +38,7 @@
 
 .card-text {
     grid-area: text;
-    margin: 10px;
+    margin: 4px;
 }
 
 .card-text .date {
@@ -50,6 +54,7 @@
 }
 
 .card-text h2 {
+    color: black;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -96,4 +101,15 @@
     transform: scale(1.12);
     box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
     opacity: 1;
+}
+
+@media screen and (max-width: 1400px) {
+    .card{
+        display: flex;
+        align-self: center;
+    }
+    .card-image{
+        align-self: center;
+        width: 20vw;
+    }
 }
