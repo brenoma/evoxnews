@@ -21,7 +21,9 @@
     .nav-item a{
         width: 100%;
     }
-    .navbar-nar {
+}
 
-    }
+.input-text {
+    border-radius: 6px;
+    width: 50vw;
 }

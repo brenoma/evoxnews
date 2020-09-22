@@ -1,12 +1,17 @@
 # Evox Group Challenge
 
+<div id="badges">
+    <img alt="Github issues" src="https://img.shields.io/github/issues/brenoma/evoxnews?style=plastic" />
+    <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/brenoma/evoxnews?style=plastic" />
+</div>
+
 ### Content Table
 
 - [**Challenge**](#challenge)
 - [**Framework**](#framework)
 - [**Packages and Libraries**](#packsandlibs)
 - [**Deploy**](#deploy)
-- [**Steps**](#steps)
+- [**TODO**](#todo)
 - [**Problems**](#problems)
 - [**Contribuing**](#contribuing)
 
@@ -24,23 +29,24 @@ For this project i will use `React` as a base framework.
 * [Axios](https://github.com/axios/axios) - HTTP client to consume the API.
 * [Bootstrap](https://getbootstrap.com/docs/4.5/getting-started/introduction/) - Librarie used for part of the page design.
 * [React Router](https://reactrouter.com/web/guides/quick-start) - The tool used to create the SPA routes.
+* [Material Ui](https://material-ui.com/) - Used to animate cards with Fade.
 
 ### <divd id="deploy" /> Deploy
 
 Probably i'll use [Heroku](https://www.heroku.com/) to deploy the application.
 
-### <div id="steps" /> Steps
+### <div id="todo" /> TODO
 
-[x] - Connection with API
-[ ] - Pagination
-[x] - Search Bar
-[x] - Filter Search
-[ ] - Deploy
+- [X] Connection with API
+- [X] Pagination
+- [X] Search Bar
+- [X] Filter Search
+- [ ] Deploy
 
 **Bônus:**
-[ ] - UI/UX Good Design
-[ ] - Good performance
-[ ] - Unitary Tests
+- [X] UI/UX Good Design
+- [X] Good performance
+- [ ] Unitary Tests
 
 ### <div id="contribuing" /> Contribuing
 

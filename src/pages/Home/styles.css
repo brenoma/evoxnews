@@ -8,9 +8,37 @@
 
 .input-text {
     border-radius: 6px;
-    width: 60vw;
+    width: 50vw;
 }
 
 .input-text input {
     justify-content: center;
+}
+
+.load-container {
+    align-items: center;
+    width: 100vw;
+    height: 65vh;
+}
+
+.spinner-grow {
+    width: 3rem;
+    height: 3rem;
+}
+
+a[href="#top"]{
+    background-color: #614EA6;
+    position: fixed;
+    top: 92%;
+    right:40px;
+    display:none;
+    font-size: 16px;
+    transition: 1.4s ease-in-out;
+    border-radius: 50vh;
+    opacity: 0.8;
+}
+a[href="#top"]:hover{
+    text-decoration:none;
+    transform: scale(1.5);
+    opacity: 1;
 }
